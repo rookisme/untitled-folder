@@ -1,0 +1,17 @@
+<HTML>
+<TITLE> SCOPE TEST </TITLE>
+<HEAD>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE = 'JavaScript'>
+var a = "dog";
+function scopeTest() {
+	a = "cat";
+	document.write("The scopeTest inside the function is: " + a + '<BR>');
+}
+document.write("The scopetest fail is: " + a + '<BR>');
+scopeTest();
+document.write("After calling scopeTest the value is: " + a + '<BR>');
+</SCRIPT>
+</BODY>
+</HTML>

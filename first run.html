@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE> MEWO </TITLE>
+<SCRIPT LANGUAGE = 'JavaScript'>
+var salary, savings = 750, safy, safyYear;
+salary = window.prompt('أدخل راتبك','');
+salary = parseFloat(salary);
+while (salary < 3000)
+{
+	salary = window.prompt('الرجاء إدخال راتبك الحقيقي','');
+	salary = parseFloat(salary);
+}
+if (salary < 7000)
+{
+	safy = (salary -750);
+	safyYear = (safy * 12);
+	savings = savings;
+	window.alert(' صافي الراتب بعد التوفير ' + safy + ' اجمالي صافي الراتب بعد التوفير السنوي ' + safyYear);
+window.alert(savings * 12 + 'التوفير في سنه' + savings * 24 + 'التوفير في سنتين');
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>

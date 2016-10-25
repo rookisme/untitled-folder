@@ -1,0 +1,54 @@
+<HTML>
+<TITLE> FUNCTIONTEST </TITLE>
+<HEAD> 
+    <SCRIPT SRC= "studentlong.js"></SCRIPT>
+</HEAD>
+<BODY>
+<SCRIPT LANUGAGE = 'JavaScript'>
+var someStudent = new Student("Lindsey", "M150");
+document.write(someStudent);
+document.write('<BR>' + "the name is: " + someStudent.name);
+document.write('<BR>' + "Course code is: " + someStudent.course);
+someStudent.name = "Sara";
+someStudent.course = "M256";
+document.write("<BR>" + "The Student name is: " + someStudent.name + "<BR>");
+document.write("The course is: " + someStudent.course);
+var anotherStudent = new Student("Stanley", "M150", 54678);
+document.write("<BR>" + 'third student name is: ' + anotherStudent.name + "<BR>");
+document.write("his course is: " + anotherStudent.course + "<BR>");
+document.write("His Student ID is: " + anotherStudent.studentId + "<BR>");
+var student1 = new Student("Rise", "M150b", 1010150);
+var student2 = new Student("Fall", "M150b", 9990101);
+student1.updateTma(1, 10);
+student1.updateTma(2, 22);
+student1.updateTma(3, 36);
+student1.updateTma(4, 49);
+student2.updateTma(1, 15);
+student2.updateTma(2, 25);
+student2.updateTma(3, 32);
+student2.updateTma(4, 41);
+document.write("<BR>" + 'fourth student name is: ' + student1.name + "<BR>");
+document.write("his course is: " + student1.course + "<BR>");
+document.write("His Student ID is: " + student1.studentId + "<BR>");
+document.write("Tma scores is: ", student1.tmaScores.toString() + '<BR>');
+document.write("<BR>" + 'fifth student name is: ' + student2.name + "<BR>");
+document.write("his course is: " + student2.course + "<BR>");
+document.write("His Student ID is: " + student2.studentId + "<BR>");
+document.write("Tma scores is: ", student2.tmaScores.toString() + '<BR>');
+var student3 = new Student("Sydney", "M150", 4504050, 4);
+var student4 = new Student("Anaise", "M150", 2349392, 4);
+student3.updateTma(1, 42);
+student3.updateTma(2, 53);
+student3.updateTma(3, 64);
+student3.updateTma(4, 49);
+student4.updateTma(1, 11);
+student4.updateTma(2, 26);
+student4.updateTma(3, 37);
+student4.updateTma(4, 44);
+student3.display();
+student4.display();
+student3.displayAverage();
+student4.displayAverage();
+</SCRIPT>
+</BODY>
+</HTML>
